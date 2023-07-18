@@ -2,3 +2,8 @@
   max-width: 1280px;
   margin: 0 auto;
 }
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}

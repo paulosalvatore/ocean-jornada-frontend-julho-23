@@ -4,9 +4,11 @@ import Card from "./components/Card/Card";
 function App() {
   return (
     <>
-      <Card />
-      <Card />
-      <Card />
+      <div className="cards-list">
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </>
   );
 }
