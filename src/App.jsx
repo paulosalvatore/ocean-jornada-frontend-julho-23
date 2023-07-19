@@ -21,6 +21,17 @@ const item3 = {
 
 const itens = [item1, item2, item3];
 
+async function carregarDadosApi() {
+  const apiUrl = "https://ocean-api-itens.onrender.com/itens";
+
+  const response = await fetch(apiUrl);
+  const body = await response.json();
+
+  console.log(body);
+}
+
+carregarDadosApi();
+
 function App() {
   return (
     <>
