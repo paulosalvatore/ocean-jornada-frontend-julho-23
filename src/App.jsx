@@ -13,12 +13,24 @@ const item2 = {
     "https://comicvine.gamespot.com/a/uploads/scale_medium/6/66303/4469088-tumblr_inline_n0aleph3fl1r8rr6o.jpg",
 };
 
+const item3 = {
+  nome: "Summer Smith",
+  imagem:
+    "https://images.squarespace-cdn.com/content/v1/5616ac17e4b018d366f57f53/1616952566614-0IEBMBBMXMO30Z37PTMN/summer+smith+soundboard",
+};
+
+const itens = [item1, item2, item3];
+
 function App() {
   return (
     <>
       <div className="cards-list">
-        <Card item={item1} />
+        {itens.map(function (item, index) {
+          return <Card key={index} item={item} />;
+        })}
+        {/* <Card item={item1} />
         <Card item={item2} />
+        <Card item={item3} /> */}
       </div>
     </>
   );
