@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Card from "./components/Card/Card";
 
@@ -44,7 +44,9 @@ function App() {
 
   console.log("itens", itens);
 
-  setItens([item1, item2]);
+  useEffect(function () {
+    setItens([item1, item2]);
+  }, []);
 
   // console.log("Iniciei o componente App");
 
